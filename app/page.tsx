@@ -1,13 +1,15 @@
 'use client'
 
-import { Header } from "./components/sections/Header";
 import { Main } from "./components/sections/Main";
+import { About } from "./components/sections/About";
+import { BeatProcrastination } from "./components/sections/BeatProcrastination";
 
 export default function Home() {
     return (
-        <main className="max-w-5xl mx-auto tracking-wide mb-4">
-        <Header />
+        <>
         <Main />
-      </main>
-    )
+        <About />
+        <BeatProcrastination />
+        </>
+    );
 }
