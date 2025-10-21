@@ -10,7 +10,7 @@ export function Main() {
     const { habit, stats, shuffle } = useHabit();
 
     return (
-        <section className="p-4 flex flex-col md:flex-row gap-50 md:pt-35">
+        <main className="p-4 flex flex-col md:flex-row gap-50 md:pt-35">
             <div>
                 <h1 className="text-gray-400 text-5xl font-black mb-10 w-[500px]">Find tiny habits to crush 2025</h1>
                 <p className="text-gray-400 mb-15 text-lg w-[500px]">Discover how much you will achieve in a year with our free calculator!</p>
@@ -39,7 +39,7 @@ export function Main() {
                     </button>
                 </div>
             </div>
-        </section>      
+        </main>      
     )
 }
 

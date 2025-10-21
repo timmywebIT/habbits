@@ -1,0 +1,39 @@
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+/* READ */
+.habits-grid > :nth-child(1) {
+  grid-column: 1 ;
+  grid-row: 1;
+
+}
+
+/* WORKOUT */
+.habits-grid > :nth-child(2) {
+  grid-column: 2 ; /* занимает две колонки справа */
+  grid-row: 1;
+}
+
+/* LEARN LANGUAGE */
+.habits-grid > :nth-child(3) {
+  grid-column: 1 / 3; /* растянут на две колонки слева */
+  grid-row: 2;
+ 
+}
+
+/* WALK */
+.habits-grid > :nth-child(4) {
+  grid-column: 3 / 4; /* справа, на одном уровне с language */
+  grid-row: 2;
+ 
+}
+
+/* LEARN INSTRUMENT */
+.habits-grid > :nth-child(5) {
+  grid-column: 2 / 4; /* на всю ширину */
+  grid-row: 3;
+}
+

@@ -1,9 +1,11 @@
 import { Header } from "@/app/components/sections/Header";
+import { Footer } from "@/app/components/sections/Footer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./styles/animations.css";
 import "./styles/components.css";
+import "./styles/beatProcrastination.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
       
           <Header />
-          {children}
+          <main className="flex-1">{children}</main>
+          <Footer /> 
         </body>
       </html>
     );
