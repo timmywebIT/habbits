@@ -21,7 +21,7 @@ export function Main() {
                     </svg>
                 </Button>
             </div>
-            <div className="relative">
+            <div className="relative min-h-[400px]">
                 <div className="text-gray-400 absolute -top-10 w-[500px] flex">
                     <p>Mini habits...</p>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mt-3 ml-0.5">

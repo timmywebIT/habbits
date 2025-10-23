@@ -12,8 +12,8 @@ export function Footer() {
                     <p className="text-sm mt-2">Copyright © 2025 - All right reserved</p>
             </div>
             <div className="mt-5 text-sm">
-                <a href="#">Home</a>
-                <a className="ml-4" href="#">Habits Visualizer</a>
+                <a href="/home">Home</a>
+                <a className="ml-4" href="/dashboard">Habits Visualizer</a>
             </div>
         </footer>
     )

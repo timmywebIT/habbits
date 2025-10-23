@@ -1,6 +1,8 @@
 'use client'
 
-import Stepper from '@/app/components/habit/Stepper'
+import Stepper from '@/app/components/habit/Stepper';
+import { DashboardHabit } from '@/app/components/habit/DashboardHabit';
+
 
 export default function Dashboard() {
   return (
@@ -10,7 +12,7 @@ export default function Dashboard() {
           <Stepper></Stepper>
         </div>
         <div>
-          ЗДесь привычки
+         <DashboardHabit></DashboardHabit>
         </div>
       </div>
     </section>

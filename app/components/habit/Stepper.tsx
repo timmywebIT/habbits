@@ -4,9 +4,9 @@ import { useState } from 'react'
 
 export default function Stepper() {
   const steps = [
-    { id: 1, label: 'Register' },
-    { id: 2, label: 'Choose plan' },
-    { id: 3, label: 'Purchase' },
+    { id: 1, label: 'Pick habits' },
+    { id: 2, label: 'See results' },
+    { id: 3, label: 'Reach goals' },
   ]
 
   const [activeStep, setActiveStep] = useState(1)
@@ -37,7 +37,7 @@ export default function Stepper() {
               )}
             </div>
             <span
-              className={`text-sm transition-colors font-bold p-1 ${
+              className={`text-sm transition-colors font-bold whitespace-nowrap   ${
                 isActive ? 'text-gray-400' : 'text-gray-400'
               }`}
             >
