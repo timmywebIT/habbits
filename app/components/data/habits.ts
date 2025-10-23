@@ -11,4 +11,20 @@ export const habitsStats = [
     { title: "2.81k", desc: "new words", frequency: "Or 108% of the time Mozart took to write Linz symphony", gradient: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"},
     { title: "2 days", desc: "(52 hours)", frequency: "94% of what's needed to carry everday conversations", gradient: "bg-gradient-to-r from-pink-500 to-yellow-500" },
     { title: "364k", desc: "steps", frequency: "Or 277 km. That's 838 Eiffel Tower 🗼", gradient: "bg-gradient-to-r from-cyan-500 to-blue-500" },
+];
+export const dashboardHabit = [
+    { title: "Read", icon: "📚" },
+    { title: "Workout", icon: "💦" },
+    { title: "Learn Language", icon: "🇬🇧" },
+    { title: "Walk", icon: "👟" },
+    { title: "Write", icon: "✍️" },
+    { title: "Code", icon: "🧑‍💻" },
+    { title: "Drink Water", icon: "💧" },
+    { title: "Learn Instrument", icon: "🎸" },
+    { title: "Stretch", icon: "🙆" },
+    { title: "Meditate", icon: "🧘" },
+    { title: "Breathing Technique", icon: "💨" },
+    { title: "Side Hustle", icon: "🙇" },
+    { title: "Sleep Well", icon: "😴" },
+    { title: "Cold Shower", icon: "🚿" },
 ]
