@@ -2,7 +2,7 @@
 
 import { Main } from "./components/sections/Main";
 import { About } from "./components/sections/About";
-import { BeatProcrastination } from "./components/sections/BeatProcrastination";
+import { BeatProcrastination } from "./components/habit/BeatProcrastination";
 
 export default function Home() {
     return (
