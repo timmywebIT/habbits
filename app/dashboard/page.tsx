@@ -3,6 +3,7 @@
 import { act, useState } from 'react';
 import Stepper from '@/app/components/habit/Stepper';
 import { DashboardHabit } from '@/app/components/habit/DashboardHabit';
+import { Form } from '@/app/components/ui/Form';
 
 export default function Dashboard() {
 
@@ -19,7 +20,10 @@ export default function Dashboard() {
           {activeStep === 2 && <div>Content for Step 2</div>}
           {activeStep === 3 && <div>Content for Step 3</div>}
         </div>
+        <div>
+        </div>
       </div>
+      <Form></Form>
     </section>
   );
 }
