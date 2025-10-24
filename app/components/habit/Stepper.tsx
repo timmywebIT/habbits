@@ -2,14 +2,17 @@
 
 import { useState } from 'react'
 
-export default function Stepper() {
+interface StepperProps {
+  activeStep: number
+  setActiveStep: (step: number) => void
+}
+
+export default function Stepper({activeStep, setActiveStep}: StepperProps) {
   const steps = [
     { id: 1, label: 'Pick habits' },
     { id: 2, label: 'See results' },
     { id: 3, label: 'Reach goals' },
   ]
-
-  const [activeStep, setActiveStep] = useState(1)
 
   return (
     <div className="flex flex-col items-start">
