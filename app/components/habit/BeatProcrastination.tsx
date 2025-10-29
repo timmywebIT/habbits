@@ -6,6 +6,7 @@ import { habitsStats } from "@/app/components/data/habits";
 export function BeatProcrastination() {
     return (
         <section className="mt-60 flex gap-10">
+       
         <div className="flex-1 max-w-lg">
           <span className="uppercase tracking-wide font-bold text-sm md:text-base text-green-200">Visualize your success</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mt-4 text-gray-400">Beat procrastination</h2>

@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 
 interface StepperProps {
   activeStep: number
@@ -13,6 +12,7 @@ export default function Stepper({activeStep, setActiveStep}: StepperProps) {
     { id: 2, label: 'See results' },
     { id: 3, label: 'Reach goals' },
   ]
+
 
   return (
     <div className="flex flex-col items-start">
