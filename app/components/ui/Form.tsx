@@ -1,5 +1,8 @@
 'use client'
 
+import EmojiPicker from "emoji-picker-react";
+import { useState } from "react";
+
 interface FormProps {
     title: string
     icon: string
@@ -12,11 +15,11 @@ interface FormPropsMain {
     onCancel: () => void
 }
 
-export function Form({ icon, title, onAdd, onCancel}: FormProps) {
+export function Form({ icon, title, onAdd, onCancel }: FormProps) {
     return (
         <div className=" flex justify-center">
             <div className="bg-base-100 rounded-2xl p-15">
-            <div className="absolute left-0 top-0 p-4">
+                <div className="absolute left-0 top-0 p-4">
                     <span className="">{icon}</span>
                     <span className="ml-2 font-bold text-lg">{title}</span>
                 </div>
@@ -49,11 +52,41 @@ export function Form({ icon, title, onAdd, onCancel}: FormProps) {
     )
 }
 
-export function FormMain({onAdd, onCancel }: FormPropsMain) {
+export function FormMain({ onAdd, onCancel }: FormPropsMain) {
+
+    const [emoji, setEmoji] = useState("⭐");
+    const [open, setOpen] = useState(false);
+
     return (
+
         <div className=" flex justify-center">
-            <div className="bg-base-100 rounded-2xl p-15">
-            <input className="input w-full p-3 pr-5 rounded-2xl input-bordered  placeholder:opacity-50 appearance-none" placeholder="SWIM" type="number" />
+
+
+            <div className="bg-base-100 rounded-2xl p-15 relative">
+                <div className="absolute left-0 top-0 p-4">
+                    <div className="flex items-center space-x-3 ">
+                        <button onClick={() => setOpen(!open)} className="text-2xl border rounded-lg px-3 py-2">
+                            {emoji}
+                        </button>
+                        <h2 className="font-bold">Create Habit</h2>
+                    </div>
+                    {open && (
+                        <div className="absolute z-50">
+                            <EmojiPicker
+                                onEmojiClick={(e) => {
+                                    setEmoji(e.emoji);
+                                    setOpen(false);
+                                }}
+                            />
+                        </div>
+                    )}
+                </div>
+
+                <div className="mt-5">
+                    <label className="text-gray-400 text-sm font-semibold pl-2">Create Habit</label>
+                    <input className="input w-full p-3 pr-5 rounded-2xl input-bordered  placeholder:opacity-50 appearance-none mb-3 mt-2" placeholder="Swim" />
+                </div>
+
                 <div>
                     <label className="text-gray-400 text-sm font-semibold pl-2">How long?</label>
                 </div>

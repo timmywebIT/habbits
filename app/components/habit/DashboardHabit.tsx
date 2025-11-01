@@ -25,8 +25,6 @@ export function DashboardHabit({ activeStep, setActiveStep }: DashboardHabitProp
 
     return (
         <section className="ml-10">
-
-
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
                 {availabeHabits.map((item, index) => (
                     <div key={index} onClick={() => setSelectedHabit(item)} className="p-4 cursor-pointer bg-base-200 rounded-2xl font-semibold flex gap-2 items-center hover:opacity-75 duration-200 ">
